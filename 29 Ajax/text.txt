@@ -1,0 +1,15 @@
+تعریف و انواع
+
+AJAX
+A = Asynchronous (نامتقارن , ناهمزمان)
+J = JavaScript
+A = Api
+X = Xhr api ==> (text file , XML , Json)
+
+برای وقتی که مرورگر کاربر قدیمیه
+  
+if (window.XMLHttpRequest) {
+    request = new XMLHttpRequest()
+  } else {
+    request = new ActiveXObject('Microsoft.XMLHTTP')
+  }

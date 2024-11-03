@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TopLearn.Com</title>
+  </head>
+
+  <body>
+    <h1><a href="https://toplearn.com">TopLearn.Com</a></h1>
+    <p id="demo"></p>
+  </body>
+
+  <script>
+
+    function Person(name, family, age) {
+      this.name = name;
+      this.family = family;
+      this.age = age;
+      this.fullName = function () {
+        return this.name + " " + this.family;
+      };
+    }
+
+    var mina = new Person("mina", "minaei", 18);
+
+    var iman = new Person("iman", "madaeny", 20);
+    iman.carname = "Pride";
+    console.log(iman.fullName());
+
+    var people = [];
+    people.push(new Person("iman", "madaeny", 30));
+    people.push(new Person("parham", "madaeny", 5));
+    people.push(new Person("sara", "ahmadi", 19));
+    people.push(new Person("ali", "rezaei", 41));
+
+    console.log(people);
+
+    var text = "";
+
+    for (x in people) {
+      text +=
+        people[x].name +
+        " " +
+        people[x].family +
+        " -> " +
+        people[x].age +
+        " <br/>";
+    }
+
+    document.getElementById("demo").innerHTML = text;
+  </script>
+</html>

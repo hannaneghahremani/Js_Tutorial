@@ -1,0 +1,8 @@
+{
+  "name": "Amir",
+  "age": 100,
+  "city": "Tehran",
+  "middleName": null,
+  "friends": ["f1", "f2"],
+  "isMale": true
+}

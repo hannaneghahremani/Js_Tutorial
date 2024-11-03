@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TopLearn.Com</title>
+  </head>
+
+  <body>
+    <h1><a href="https://toplearn.com">TopLearn.Com</a></h1>
+    <!-- در رویداد ها this -->
+    <button onclick="this.style.display='none'">Click Me !</button>
+    <button onclick="myFunction()">Click Me 2 !</button>
+  </body>
+
+  <script>
+    
+    // در شی ها this
+    var firstName = "Ali";
+    var person = {
+      firstName: "Iman",
+      lastName: "Madaeny",
+      FullName: function () {
+        return this.firstName + " " + this.lastName;
+      },
+    };
+
+    // در صفحه اچ تی ام ال  this
+    var x = this;
+
+    function myFunction() {
+      alert(this);
+    }
+    alert(myFunction());
+
+  </script>
+</html>

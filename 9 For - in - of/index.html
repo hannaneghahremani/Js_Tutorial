@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TopLearn.Com</title>
+  </head>
+
+  <body>
+    <h1><a href="https://toplearn.com">TopLearn.Com</a></h1>
+    <p id="result"></p>
+  </body>
+
+  <script>
+    var names = ["Iman", "Ali", "Reza", "Sara", "Mina"];
+    var element = document.getElementById("result");
+    var text = "";
+
+    // For
+    for (var i = 0; i < names.length; i++) {
+      text += names[i] + " <br/>";
+    }
+    element.innerHTML = text;
+
+    var i = 0;
+    for ( ; i < 2; ) {
+      alert(i);
+      i++;
+    }
+
+    var text = names[0] + " <br/>";
+    text += names[1] + " <br/>";
+    text += names[2] + " <br/>";
+
+    element.innerHTML = text;
+
+    for (var i = 0; i <= 10; i++) {
+      if (i === 3 || i === 7) {
+        //  break;
+        continue;
+      }
+
+      document.write(i + " <br/>");
+    }
+
+    
+    // For In
+    for (n in names) {
+      alert(names[n]);
+    }
+
+    // For Of
+    for (m in names) {
+      alert(names[m]);
+    }
+
+  </script>
+</html>
